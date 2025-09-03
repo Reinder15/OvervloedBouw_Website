@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overvloed Bouw – Houtwerk op maat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+  <!-- Navigatie -->
+  <nav class="fixed top-0 w-full z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-green-700">Overvloed Bouw</h1>
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#portfolio" class="hover:text-green-700 transition">Portfolio</a></li>
+        <li><a href="#waarom" class="hover:text-green-700 transition">Waarom wij</a></li>
+        <li><a href="#contact" class="hover:text-green-700 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative bg-cover bg-center h-screen" style="background-image: url('https://picsum.photos/id/1018/1600/900');">
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center px-6">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg">Overvloed Bouw</h1>
+      <p class="text-lg md:text-2xl text-gray-200 mb-6">Tuinhuizen, veranda's, overkappingen en maatwerk</p>
+      <p class="text-base md:text-lg text-gray-200 mb-8 max-w-2xl">
+        Wij bouwen tuinhuizen, overkappingen en veranda's met een focus op duurzaamheid. Door zoveel mogelijk te werken met gerecycled materiaal, creëren wij stijlvolle projecten die bijdragen aan een groenere wereld.
+      </p>
+      <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-2xl font-semibold transition">Vrijblijvend contact</a>
+    </div>
+  </header>
+
+  <!-- Waarom Section -->
+  <section id="waarom" class="py-20 px-6 md:px-12 bg-green-600 text-white">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Waarom kiezen voor Overvloed Bouw?</h2>
+    <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto text-lg">
+      <ul class="space-y-4">
+        <li>✔️ Persoonlijk contact en maatwerkadvies</li>
+        <li>✔️ Duurzaam: gebruik van gerecycled materiaal</li>
+      </ul>
+      <ul class="space-y-4">
+        <li>✔️ Betrouwbaar vakmanschap en nette afwerking</li>
+        <li>✔️ Projecten afgestemd op jouw stijl en wensen</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 px-6 md:px-12 bg-white">
+    <div class="mb-12 text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Onze Projecten</h2>
+      <p class="text-gray-600">Bij ons is alles mogelijk! We staan altijd open voor overleg en verkennen graag samen de verschillende mogelijkheden die aansluiten bij jouw wensen.</p>
+    </div>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="bg-gray-100 rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="static/tuinhuis.jpg" alt="Tuinhuis" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Tuinhuizen</h3>
+          <p class="text-gray-600">Ruime, praktische en sfeervolle tuinhuizen, volledig op maat gemaakt.</p>
+        </div>
+      </div>
+      <div class="bg-gray-100 rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="static/overkapping_3.jpg" alt="Overkapping" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Overkappingen</h3>
+          <p class="text-gray-600">Genieten van het buitenleven, beschermd tegen regen en wind.</p>
+        </div>
+      </div>
+      <div class="bg-gray-100 rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="static/veranda.jpg" alt="Veranda" class="w-full h-56 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Veranda's</h3>
+          <p class="text-gray-600">Een verlengstuk van jouw woning, met meer comfort en licht.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 md:px-12 bg-gray-50">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Neem contact op</h2>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-10">
+      <!-- Contact Info -->
+      <div class="space-y-4 text-lg">
+        <p><strong>📞 Telefoon:</strong> 06-48331785</p>
+        <p><strong>📧 E-mail:</strong> overvloed.bouw@gmail.com</p>
+        <p><strong>📍 Locatie:</strong> Regio Groningen</p>
+        <p class="text-gray-600">Of vul het formulier in en wij nemen zo snel mogelijk contact met je op.</p>
+      </div>
+      <!-- Contact Form -->
+      <form class="bg-gray-100 p-6 rounded-2xl shadow space-y-4" method="POST" action="contact.php" id="contactForm">
+        <input type="text" name="naam" placeholder="Naam" required class="w-full p-3 rounded-md border">
+        <input type="email" name="email" placeholder="E-mail" required class="w-full p-3 rounded-md border">
+        <textarea name="bericht" placeholder="Bericht" rows="4" required class="w-full p-3 rounded-md border"></textarea>
+        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-md font-semibold transition">Verstuur</button>
+      </form>
+      <div id="successPopup" style="display:none;" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50">
+        <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+          <h3 class="text-2xl font-bold mb-4 text-green-600">Bericht verzonden!</h3>
+          <p class="mb-4">Bedankt voor uw bericht. Ik neem spoedig contact met u op.</p>
+          <button onclick="document.getElementById('successPopup').style.display='none'" class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded">Sluiten</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 text-center py-6 mt-10">
+    <p>&copy; 2025 Overvloed Bouw – Alle rechten voorbehouden</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var form = e.target;
+      var data = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: data
+      })
+      .then(response => response.text())
+      .then(text => {
+        if (text.includes('succesvol')) {
+          document.getElementById('successPopup').style.display = 'flex';
+          form.reset();
+        } else {
+          alert('Er is iets mis gegaan');
+        }
+      })
+      .catch(() => {
+        alert('Er is een fout opgetreden bij het verzenden.');
+      });
+    });
+  </script>
+</body>
+</html>
