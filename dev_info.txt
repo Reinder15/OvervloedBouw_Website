@@ -1,2 +1,0 @@
-ssh su298930@5018551264.ssh.w2.strato.hosting
-321NietStoken!
